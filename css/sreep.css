@@ -276,4 +276,102 @@ strong {
   color: red;
 }
 
+@media screen and (max-width:640px) {
+  /*スマホ用のcssを記述*/
+  html {
+    font-size: 1vh;
+  }
+  .top-img img {
+    width: 100vw;
+  }
+  h1 {
+  font-size: 1.5rem; /* 15px */
+  }
+  .container {
+    width:360px;
+    line-height: 2.0;
+  }
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 63%;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .overlay.show li {
+    width: 20%;
+  }
+  .text {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    font-size: 1vh;
+    width: 100px;
+    background: #e0edff;
+  }
+  
+  .text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  @media screen and (max-width:640px) {
+    /*スマホ用のcssを記述*/
+    html {
+      font-size: 62.5%; 
+    }
+    h1 {
+    font-size: 1.5rem; /* 15px */
+    }
+    .bg-img-zoom {
+      width: 100%;
+    }
+    .overlay #close {
+      position: absolute;
+      top: 16px;
+      right: 63%;
+      font-size: 32px;
+      cursor: pointer;
+    }
+    
+    .overlay.show li {
+      width: 20%;
+    }
+    .text {
+      position: relative;
+      display: inline-block;
+      margin: 1.5em 0 1.5em 15px;
+      padding: 7px 10px;
+      min-width: 120px;
+      max-width: 100%;
+      font-size: 1vh;
+      width: 100px;
+      background: #e0edff;
+    }
+    
+    .text:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-right: 15px solid #e0edff;
+    }
+    .content-wrapper {
+      width: 350px;
+    font-size: 1px;
+  }
+}
+
+
+
 /* ------ main end -------------- */
