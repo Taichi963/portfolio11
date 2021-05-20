@@ -95,7 +95,6 @@ header h1 {
   .pc-menu {
     display: block;
     margin-left: auto;
-
   }
 
   .sp-menu {
@@ -267,12 +266,11 @@ header h1 {
 }
 
 .bg-img-zoom {
-  background-image: url(../images/image01.jpg);
+  background-image: url(../images/image01-min.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
   width: 100%;
-
 }
 
 .img-bg50 {
@@ -325,7 +323,7 @@ header h1 {
   border-right: 15px solid #e0edff;
 }
 
-.icon p{
+.icon p {
 	padding-left: 30px;
 }
 
@@ -368,4 +366,69 @@ header h1 {
 	padding: 17px;
 	font-size: 18px;
 }
+
+
+@media screen and (max-width:640px) {
+  /*スマホ用のcssを記述*/
+  h1 {
+  font-size: 1.5rem; /* 15px */
+  }
+  .bg-img-zoom {
+    width: 100%;
+  }
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 63%;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .overlay.show li {
+    width: 20%;
+  }
+  .text {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    font-size: 1vh;
+    width: 100px;
+    background: #e0edff;
+  }
+  
+  .text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+
+  .article img {
+    width: 400px;
+  }
+  
+  #contents-text {
+    font-size: 1vh;
+    width: 400px;
+  }
+
+  .content {
+    padding: 20px 0 0 0;
+  }
+
+  .content-text {
+    padding-left: 0;
+    width: 400px;
+  }
+
+  
+  }
+
+
 
